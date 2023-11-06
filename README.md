@@ -38,4 +38,3 @@ Users should be able to:
 ### What I learned
 
 - Changing a SVG icon's color on hover
-- Create your own SVG

@@ -73,13 +73,14 @@ h2{
     background-color: hsl(236, 21%, 26%);
     height:160px;
     width:170px;
-    margin: 1.5rem;
+    margin:2rem 1.5rem;
     border-radius: 0.75rem;
+    box-shadow: 0 10px 0 hsl(233, 18%, 9%);
 }
 .dot1{
     position: absolute;
     border-radius:0 0.75rem 0.75rem 0;
-    background:hsl(235, 16%, 14%);
+    background:hsl(233, 18%, 9%);
     border:1px solid hsl(234, 17%, 12%);
     height:20px;
     width:10px;
@@ -89,7 +90,7 @@ h2{
 .dot2{
     position: absolute;
     border-radius:0.75rem 0 0 0.75rem;
-    background:hsl(235, 16%, 14%);
+    background:hsl(233, 18%, 9%);
     border:1px solid hsl(234, 17%, 12%);
     height:20px;
     width:10px;
@@ -107,6 +108,37 @@ h2{
     width:168px;
     box-shadow: 0 1px 0 hsla(237, 18%, 59%, 0.336)
 }
+
+
+/* =====
+===========
+COUNTDOWN ANIMATION
+===========
+=====*/
+@keyframes time {
+    0% {
+        opacity: 1;
+    } 5% {
+        opacity: 0;
+    } 95% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+@keyframes flipcard {
+    10% {
+        height:0px;
+        margin-top:80px;
+    } 50% {
+        height:80px;
+        margin-top:80px;
+    } 80% {
+        height:80px;
+        margin-top:0;
+    }
+}
+
 
 
 

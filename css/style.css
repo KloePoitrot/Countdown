@@ -117,33 +117,34 @@ COUNTDOWN ANIMATION
 =====*/
 @keyframes time {
     0% {
-        opacity: 1;
-    } 5% {
         opacity: 0;
-    } 95% {
+    } 50% {
         opacity: 0;
     } 100% {
         opacity: 1;
     }
 }
 @keyframes flipcard {
-    10% {
+    0% {
+        height:0px;
+        margin-top:80px;
+    } 10% {
         height:0px;
         margin-top:80px;
     } 50% {
         height:80px;
         margin-top:80px;
-    } 80% {
+    } 90% {
         height:80px;
         margin-top:0;
     }
 }
 
 .flipcard{
-    animation: flipcard 0.25s
+    animation: flipcard 0.3s
 }
 .time{
-    animation: time 0.25s
+    animation: time 0.3s
 }
 
 

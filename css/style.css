@@ -23,7 +23,7 @@ body{
     text-align: center;
     color: hsl(0, 0%, 100%);
     background: hsl(234, 17%, 12%);
-    background-image:url("/img/pattern-hills.svg"), url("/img/bg-stars.svg");
+    background-image:url("../img/pattern-hills.svg"), url("../img/bg-stars.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -139,6 +139,12 @@ COUNTDOWN ANIMATION
     }
 }
 
+.flipcard{
+    animation: flipcard 0.25s
+}
+.time{
+    animation: time 0.25s
+}
 
 
 

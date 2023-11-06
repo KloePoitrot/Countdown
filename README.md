@@ -38,3 +38,4 @@ Users should be able to:
 ### What I learned
 
 - Changing a SVG icon's color on hover
+- Creating a countdown with javascript

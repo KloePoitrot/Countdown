@@ -1,22 +1,17 @@
-// Display 2 digits
-function twoDigits(num, totalLength) {
-    return String(num).padStart(totalLength, '0');
-}
-
-// Check if cookie exist/If the website has been visited
-
-
-// Initiate Countown
-let date = new Date();
-date.setTime(date.getTime()+(14*24*60*60*1000));
+// Initiate final date
+let finalDate = new Date("nov 14, 2024 14:45:80").getTime()
 
 let initnow = new Date().getTime()
-let initdistance = date - initnow
+let initdistance = finalDate - initnow
 
 let initdays = Math.floor(initdistance / (1000 * 60 * 60 * 24))
 let inithours = Math.floor((initdistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
 let initminutes = Math.floor((initdistance % (1000 * 60 * 60)) / (1000 * 60))
 let initseconds = Math.floor((initdistance % (1000 * 60)) / 1000)
+
+function twoDigits(num, totalLength) {
+    return String(num).padStart(totalLength, '0');
+}
 
 document.querySelector("#days h2").innerHTML = twoDigits(initdays, 2)
 document.querySelector("#hours h2").innerHTML = twoDigits(inithours, 2)
@@ -24,12 +19,11 @@ document.querySelector("#minutes h2").innerHTML = twoDigits(initminutes, 2)
 document.querySelector("#seconds h2").innerHTML = twoDigits(initseconds, 2)
 
 
-// update Counter
+
+
 function timer() {
     let now = new Date().getTime()
-    let distance = date - now
-    
-    document.cookie = "name=countdown; expires=" + date + "; path=/"
+    let distance = finalDate - now
 
     let days = Math.floor(distance / (1000 * 60 * 60 * 24))
     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))

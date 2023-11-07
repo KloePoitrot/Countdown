@@ -84,8 +84,7 @@ function timer() {
         }, 900)
     }
 
-    // Updates localStorage
-    updateLocal(days, hours, minutes, seconds)
+    
 
 
     // Check if 
@@ -107,16 +106,20 @@ function timer() {
         document.querySelector("#seconds h2").classList.remove("time")
         document.querySelector("#seconds .shading").classList.remove("flipcard")
     }, 900)
+
+
+    // Updates localStorage
+    setTimeout(() => {
+        let s = seconds * 1000
+        let m = minutes * 1000 * 60
+        let h = hours * 1000 * 60 * 60
+        let d = days * 1000 * 60 * 60 * 24
+        localStorage.setItem('timeLeft', d + h + m + s)
+    }, 600)
+    
 }
 
 setInterval(() => timer(), 1000)
 
 
 // Update LocalHost
-function updateLocal(d, h, m, s) {
-    s = s * 1000
-    m = m * 1000 * 60
-    h = h * 1000 * 60 * 60
-    d = d * 1000 * 60 * 60 * 24
-    localStorage.setItem('timeLeft', d + h + m + s)
-}

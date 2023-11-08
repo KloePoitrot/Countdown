@@ -173,3 +173,139 @@ footer div:nth-child(1){
     gap:1.5rem
 }
 
+
+
+/* =====
+===========
+RESPONSIVE
+===========
+=====*/
+@media screen and (max-width:847px) {
+    .overflow {
+        width:130px!important;
+        height:120px!important;
+        margin:2rem 0.75rem!important;
+    }
+    h2{
+        font-size:4.5rem!important;
+    }
+
+    
+    .dot1{
+        margin-top:50px;
+    }
+    .dot2{
+        margin-top:50px;
+        margin-left:119px;
+    }
+    .shading{
+        height:60px;
+        width:128px;
+    }
+
+    
+    @keyframes flipcard {
+        0% {
+            height:0px;
+            margin-top:60px;
+        } 10% {
+            height:0px;
+            margin-top:60px;
+        } 50% {
+            height:60px;
+            margin-top:60px;
+        } 90% {
+            height:60px;
+            margin-top:0;
+        }
+    }
+}
+
+
+@media screen and (max-width:610px) {
+    .overflow {
+        width:110px!important;
+        height:100px!important;
+        margin:2rem 0.75rem!important;
+    }
+    h2{
+        font-size:3rem!important;
+    }
+
+    
+    .dot1{
+        margin-top:40px;
+    }
+    .dot2{
+        margin-top:40px;
+        margin-left:99px;
+    }
+    .shading{
+        height:50px;
+        width:108px;
+    }
+
+    @keyframes flipcard {
+        0% {
+            height:0px;
+            margin-top:50px;
+        } 10% {
+            height:0px;
+            margin-top:50px;
+        } 50% {
+            height:50px;
+            margin-top:50px;
+        } 90% {
+            height:50px;
+            margin-top:0;
+        }
+    }
+}
+
+
+@media screen and (max-width:530px) {
+    section > div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .overflow {
+        width:130px!important;
+        height:120px!important;
+        margin:2rem 0.75rem!important;
+    }
+    h2{
+        font-size:4.5rem!important;
+    }
+
+    
+    .dot1{
+        margin-top:50px;
+    }
+    .dot2{
+        margin-top:50px;
+        margin-left:119px;
+    }
+    .shading{
+        height:60px;
+        width:128px;
+    }
+
+    
+    @keyframes flipcard {
+        0% {
+            height:0px;
+            margin-top:60px;
+        } 10% {
+            height:0px;
+            margin-top:60px;
+        } 50% {
+            height:60px;
+            margin-top:60px;
+        } 90% {
+            height:60px;
+            margin-top:0;
+        }
+    }
+}
